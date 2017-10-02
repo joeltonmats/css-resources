@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Transitions</h1>
+
+    <h2>Simple transition</h2>
+
+    <div id="transition1">
+        This is a div
+    </div>
+
+    <h2>Change several properties</h2>
+    <input type="checkbox" name="delay" value="delay" style="margin-bottom:2px;" id="delay">Delay 2 seconds</input>
+
+    <div id="transition2">
+        This is a div
+    </div>
+
+    <h2>Specify the speed curve of transition</h2>
+    <div id="transitionTimeOptions">
+        <input type="radio" name="transitionTime" value="linear">linear</input>
+        <input type="radio" name="transitionTime" value="ease">ease</input>
+        <input type="radio" name="transitionTime" value="ease-in">ease-in</input>
+        <input type="radio" name="transitionTime" value="ease-out">ease-out</input>
+        <input type="radio" name="transitionTime" value="ease-in-out">ease-in-out</input>
+    </div>
+
+    <div id="transition3">
+        This is a div
+    </div>
+
+    <hr/>
+
+
+    <h2>Different Hover Effecs </h2>
+    <div class="galleryExample">
+        <a class="hvr-grow">Grow</a>
+        <a href="#" class="hvr-shrink">Shrink</a>
+        <a href="#" class="hvr-pulse">Pulse</a>
+    </div>
+
+    <hr/>
+    <h2>Examples</h2>
+    <div class="galleryExample">
+        <div id="example1" class="block fade">
+            Fade In
+        </div>
+        <div id="example2" class="block color">
+            Fade Out
+        </div>
+        <div id="example3" class="block grow">
+            Grow
+        </div>
+        <div id="example4" class="block shrink">
+            Shrink
+        </div>
+        <div id="example5" class="block rotate">
+            Rotate
+        </div>
+        <div id="example6" class="block circle">
+            Square to Circle
+        </div>
+    </div>
+
+    <script src="./assets/javascript/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
