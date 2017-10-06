@@ -1,383 +1,510 @@
-    @import url(http://fonts.googleapis.com/css?family=Roboto);
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        box-sizing: border-box;
-    }
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
 
-    #transition1 {
-        width: 100px;
-        height: 100px;
-        background: red;
-        transition: width 2s;
-    }
+        #transition1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+        }
 
-    #transition1:hover {
-        width: 300px;
-    }
+        #transition1:hover {
+            width: 300px;
+        }
 
-    #transition2 {
-        width: 100px;
-        height: 100px;
-        background: #1f8e4f;
-        transition: width 2s, height 4s;
-    }
+        #transition2 {
+            width: 100px;
+            height: 100px;
+            background: #1f8e4f;
+            transition: width 2s, height 4s;
+        }
 
-    #transition2:hover {
-        width: 300px;
-        height: 300px;
-    }
+        #transition2:hover {
+            width: 300px;
+            height: 300px;
+        }
 
-    #transition3 {
-        width: 100px;
-        height: 100px;
-        background: #671ec3;
-        transition: width 2s;
-        transition-timing-function: linear;
-    }
+        #transition3 {
+            width: 100px;
+            height: 100px;
+            background: #671ec3;
+            transition: width 2s;
+            transition-timing-function: linear;
+        }
 
-    #transition3:hover {
-        width: 300px;
-    }
+        #transition3:hover {
+            width: 300px;
+        }
 
-    #transitionTimeOptions {
-        padding-bottom: 10px;
-    }
+        #transitionTimeOptions {
+            padding-bottom: 10px;
+        }
 
-    .block {
-        margin: 10px 10px;
-        width: 383px;
-        height: 198px;
-        background: #676470;
-        color: #fff;
-        font-family: Lato;
-        font-weight: 900;
-        font-size: 3.4em;
-        text-align: center;
-        line-height: 198px;
-        transition: all 0.3s;
-    }
+        .block {
+            margin: 10px 10px;
+            width: 383px;
+            height: 198px;
+            background: #676470;
+            color: #fff;
+            font-family: Lato;
+            font-weight: 900;
+            font-size: 3.4em;
+            text-align: center;
+            line-height: 198px;
+            transition: all 0.3s;
+        }
 
-    .galleryExample {
-        display: flex;
-        flex-wrap: wrap;
-    }
+        .galleryExample {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    .fade {
-        opacity: 0.5;
-    }
+        .fade {
+            opacity: 0.5;
+        }
 
-    .fade:hover {
-        opacity: 1;
-    }
+        .fade:hover {
+            opacity: 1;
+        }
 
-    .color {
-        background-color: #1880dc;
-    }
+        .color {
+            background-color: #1880dc;
+        }
 
-    .color:hover {
-        background-color: #9db523;
-    }
+        .color:hover {
+            background-color: #9db523;
+        }
 
-    .grow:hover {
-        transform: scale(1.3);
-    }
+        .grow:hover {
+            transform: scale(1.3);
+        }
 
-    .shrink:hover {
-        transform: scale(0.8);
-    }
+        .shrink:hover {
+            transform: scale(0.8);
+        }
 
-    .rotate:hover {
-        transform: rotateZ(-30deg);
-    }
+        .rotate:hover {
+            transform: rotateZ(-30deg);
+        }
 
-    .circle:hover {
-        border-radius: 50%;
-    }
-    /********************************************* DEMOS ******************************************************/
+        .circle:hover {
+            border-radius: 50%;
+        }
+        /********************************************* DEMOS ******************************************************/
 
-    .container {
-        width: 200px;
-        height: 200px;
-        border: 1px solid #CCC;
-        margin: 0 auto 40px;
-        position: relative;
-    }
+        .container {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #CCC;
+            margin: 0 auto 40px;
+            position: relative;
+        }
 
-    .container2 {
-        width: 200px;
-        height: 200px;
-        border: 1px solid #CCC;
-        margin: 0 auto 60px;
-        position: relative;
-        perspective: 600px;
-    }
+        .container2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #CCC;
+            margin: 0 auto 60px;
+            position: relative;
+            perspective: 600px;
+        }
 
-    .container3 {
-        width: 200px;
-        height: 260px;
-        position: relative;
-        perspective: 800px;
-        margin: 10px auto;
-    }
+        .container3 {
+            width: 200px;
+            height: 260px;
+            position: relative;
+            perspective: 800px;
+            margin: 10px auto;
+        }
 
-    #card {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        transform-style: preserve-3d;
-        transition: transform 1s;
-    }
+        #card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
 
-    #card figure {
-        margin: 0;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
+        #card figure {
+            margin: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
 
-    #card .front {
-        background: red;
-    }
+        #card .front {
+            background: red;
+        }
 
-    #card .back {
-        background: blue;
-        transform: rotateY(180deg);
-    }
+        #card .back {
+            background: blue;
+            transform: rotateY(180deg);
+        }
 
-    #card.flipped {
-        transform: rotateY(180deg);
-    }
+        #card.flipped {
+            transform: rotateY(180deg);
+        }
+        /* inverse rotation */
 
-    /* inverse rotation */
-    #card {
-        transform-origin: right center;
-    }
+        #card {
+            transform-origin: right center;
+        }
 
-    #card.flipped {
-        transform: translateX(-100%) rotateY(-180deg);
-    }
+        #card.flipped {
+            transform: translateX(-100%) rotateY(-180deg);
+        }
 
-    .panel {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        opacity: 0.7;
-        color: white;
-        background: red;
-    }
+        .panel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0.7;
+            color: white;
+            background: red;
+        }
 
-    .container figure {
-        display: block;
-        width: 55px;
-        height: 55px;
-        float: left;
-        margin: 5px;
-    }
+        .container figure {
+            display: block;
+            width: 55px;
+            height: 55px;
+            float: left;
+            margin: 5px;
+        }
 
-    .box {
-        width: 100%;
-        height: 100%;
-    }
+        .box {
+            width: 100%;
+            height: 100%;
+        }
 
-    #red .box {
-        background-color: red;
-        transform: perspective(600px) rotateY( 45deg);
-    }
+        #red .box {
+            background-color: red;
+            transform: perspective(600px) rotateY( 45deg);
+        }
 
-    #blue .box {
-        background-color: blue;
-        transform: rotateY(45deg);
-    }
+        #blue .box {
+            background-color: blue;
+            transform: rotateY(45deg);
+        }
 
-    #green {
-        perspective: 400px;
-    }
+        #green {
+            perspective: 400px;
+        }
 
-    #green figure {
-        background-color: green;
-        transform: rotateY(45deg);
-    }
+        #green figure {
+            background-color: green;
+            transform: rotateY(45deg);
+        }
 
-    #translate-z-negative .panel {
-        transform: translateZ( -200px);
-    }
+        #translate-z-negative .panel {
+            transform: translateZ( -200px);
+        }
 
-    #translate-z-positive .panel {
-        transform: translateZ( 200px);
-    }
+        #translate-z-positive .panel {
+            transform: translateZ( 200px);
+        }
 
-    #rotate-x .panel {
-        transform: rotateX(45deg);
-    }
+        #rotate-x .panel {
+            transform: rotateX(45deg);
+        }
 
-    #rotate-y .panel {
-        transform: rotateY(45deg);
-    }
+        #rotate-y .panel {
+            transform: rotateY(45deg);
+        }
 
-    #rotate-z .panel {
-        transform: rotateZ(45deg);
-    }
-    /*  EFFECTS   */
+        #rotate-z .panel {
+            transform: rotateZ(45deg);
+        }
 
-    a:hover {
-        text-decoration: none;
-    }
+        .container-cube {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 0 auto 40px;
+            border: 1px solid #CCC;
+            perspective: 1000px;
+        }
 
-    [class^="hvr-"] {
-        margin: .4em;
-        padding: 1em;
-        cursor: pointer;
-        background: #e1e1e1;
-        text-decoration: none;
-        color: #666;
-        /* Prevent highlight colour when element is tapped */
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        font-family: 'Roboto', sans-serif;
-    }
-    /********************************************* BACKGROUND TRANSITIONS ******************************************************/
-    /* Grow */
+        #cube,
+        #cube figure {
+            transition: transform 1s;
+        }
 
-    .hvr-grow {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        transition-duration: 0.3s;
-        transition-property: transform;
-    }
-    /* ORDER LINK PSEUDO CLASS: LINK, VISITED, HOVER, ACTIVE */
+        #cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+        }
 
-    .hvr-grow:hover,
-    .hvr-grow:focus,
-    .hvr-grow:active {
-        /* Equal to scaleX(1.1) scaleY(1.1) */
-        transform: scale(1.1);
-    }
-    /* Shrink */
+        #cube figure {
+            display: block;
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            border: 2px solid black;
+            line-height: 196px;
+            font-size: 120px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
 
-    .hvr-shrink {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        transition-duration: 0.3s;
-        transition-property: transform;
-    }
+        figure {
+            margin: 0;
+        }
 
-    .hvr-shrink:hover,
-    .hvr-shrink:focus,
-    .hvr-shrink:active {
-        transform: scale(0.9);
-    }
-    /* Pulse */
+        .options {
+            position: relative;
+            z-index: 100;
+            margin-bottom: 40px;
+            margin-left: 39%;
+        }
 
-    @keyframes hvr-pulse {
-        25% {
+        #cube .front {
+            background: hsla( 0, 100%, 50%, 0.5);
+        }
+
+        #cube .back {
+            background: hsla( 60, 100%, 50%, 0.5);
+        }
+
+        #cube .right {
+            background: hsla( 120, 100%, 50%, 0.5);
+        }
+
+        #cube .left {
+            background: hsla( 180, 100%, 50%, 0.5);
+        }
+
+        #cube .top {
+            background: hsla( 240, 100%, 50%, 0.5);
+        }
+
+        #cube .bottom {
+            background: hsla( 300, 100%, 50%, 0.5);
+        }
+
+        .step2 #cube .front {
+            transform: rotateY( 0deg);
+        }
+
+        .step2 #cube .back {
+            transform: rotateX( 180deg);
+        }
+
+        .step2 #cube .right {
+            transform: rotateY( 90deg);
+        }
+
+        .step2 #cube .left {
+            transform: rotateY( -90deg);
+        }
+
+        .step2 #cube .top {
+            transform: rotateX( 90deg);
+        }
+
+        .step2 #cube .bottom {
+            transform: rotateX( -90deg);
+        }
+
+        .step3 #cube .front,
+        .step4 #cube .front {
+            transform: rotateY( 0deg) translateZ( 100px);
+        }
+
+        .step3 #cube .back,
+        .step4 #cube .back {
+            transform: rotateX( 180deg) translateZ( 100px);
+        }
+
+        .step3 #cube .right,
+        .step4 #cube .right {
+            transform: rotateY( 90deg) translateZ( 100px);
+        }
+
+        .step3 #cube .left,
+        .step4 #cube .left {
+            transform: rotateY( -90deg) translateZ( 100px);
+        }
+
+        .step3 #cube .top,
+        .step4 #cube .top {
+            transform: rotateX( 90deg) translateZ( 100px);
+        }
+
+        .step3 #cube .bottom,
+        .step4 #cube .bottom {
+            transform: rotateX( -90deg) translateZ( 100px);
+        }
+
+        .step4 #cube {
+            transform: translateZ( -100px);
+        }
+        /*  EFFECTS   */
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        [class^="hvr-"] {
+            margin: .4em;
+            padding: 1em;
+            cursor: pointer;
+            background: #e1e1e1;
+            text-decoration: none;
+            color: #666;
+            /* Prevent highlight colour when element is tapped */
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-family: 'Roboto', sans-serif;
+        }
+        /********************************************* BACKGROUND TRANSITIONS ******************************************************/
+        /* Grow */
+
+        .hvr-grow {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+        /* ORDER LINK PSEUDO CLASS: LINK, VISITED, HOVER, ACTIVE */
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            /* Equal to scaleX(1.1) scaleY(1.1) */
             transform: scale(1.1);
         }
-        75% {
+        /* Shrink */
+
+        .hvr-shrink {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+
+        .hvr-shrink:hover,
+        .hvr-shrink:focus,
+        .hvr-shrink:active {
             transform: scale(0.9);
         }
-    }
+        /* Pulse */
 
-    .hvr-pulse {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-    }
+        @keyframes hvr-pulse {
+            25% {
+                transform: scale(1.1);
+            }
+            75% {
+                transform: scale(0.9);
+            }
+        }
 
-    .hvr-pulse:hover,
-    .hvr-pulse:focus,
-    .hvr-pulse:active {
-        animation-name: hvr-pulse;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    /********************************************* BACKGROUND TRANSITIONS ******************************************************/
-    /* Sweep To Right */
+        .hvr-pulse {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+        }
 
-    .hvr-sweep-to-right {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        transition-property: color;
-        transition-duration: 0.3s;
-    }
+        .hvr-pulse:hover,
+        .hvr-pulse:focus,
+        .hvr-pulse:active {
+            animation-name: hvr-pulse;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        /********************************************* BACKGROUND TRANSITIONS ******************************************************/
+        /* Sweep To Right */
 
-    .hvr-sweep-to-right:before {
-        content: "";
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: #2098D1;
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-        transition-property: transform;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-    }
+        .hvr-sweep-to-right {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            transition-property: color;
+            transition-duration: 0.3s;
+        }
 
-    .hvr-sweep-to-right:hover,
-    .hvr-sweep-to-right:focus,
-    .hvr-sweep-to-right:active {
-        color: white;
-    }
+        .hvr-sweep-to-right:before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: #2098D1;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
 
-    .hvr-sweep-to-right:hover:before,
-    .hvr-sweep-to-right:focus:before,
-    .hvr-sweep-to-right:active:before {
-        transform: scaleX(1);
-    }
-    /********************************************* ICONS TRANSITIONS ******************************************************/
+        .hvr-sweep-to-right:hover,
+        .hvr-sweep-to-right:focus,
+        .hvr-sweep-to-right:active {
+            color: white;
+        }
 
-    .hvr-icon-back {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        position: relative;
-        padding-left: 2.2em;
-        transition-duration: 0.1s;
-    }
+        .hvr-sweep-to-right:hover:before,
+        .hvr-sweep-to-right:focus:before,
+        .hvr-sweep-to-right:active:before {
+            transform: scaleX(1);
+        }
+        /********************************************* ICONS TRANSITIONS ******************************************************/
 
-    .hvr-icon-back:before {
-        content: "\f137";
-        position: absolute;
-        left: 1em;
-        padding: 0 1px;
-        font-family: FontAwesome;
-        transform: translateZ(0);
-        transition-duration: 0.1s;
-        transition-property: transform;
-        transition-timing-function: ease-in-out;
-    }
+        .hvr-icon-back {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            position: relative;
+            padding-left: 2.2em;
+            transition-duration: 0.1s;
+        }
 
-    .hvr-icon-back:hover:before,
-    .hvr-icon-back:focus:before,
-    .hvr-icon-back:active:before {
-        transform: translateX(-4px);
-    }
-    /********************************************* BORDER TRANSITIONS ******************************************************/
+        .hvr-icon-back:before {
+            content: "\f137";
+            position: absolute;
+            left: 1em;
+            padding: 0 1px;
+            font-family: FontAwesome;
+            transform: translateZ(0);
+            transition-duration: 0.1s;
+            transition-property: transform;
+            transition-timing-function: ease-in-out;
+        }
 
-    .hvr-border-fade {
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        transition-duration: 0.3s;
-        transition-property: box-shadow;
-        /* Hack to improve aliasing on mobile/tablet devices */
-        box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px transparent;
-    }
+        .hvr-icon-back:hover:before,
+        .hvr-icon-back:focus:before,
+        .hvr-icon-back:active:before {
+            transform: translateX(-4px);
+        }
+        /********************************************* BORDER TRANSITIONS ******************************************************/
 
-    .hvr-border-fade:hover,
-    .hvr-border-fade:focus,
-    .hvr-border-fade:active {
-        /* Hack to improve aliasing on mobile/tablet devices */
-        box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px transparent;
-    }
+        .hvr-border-fade {
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            transition-duration: 0.3s;
+            transition-property: box-shadow;
+            /* Hack to improve aliasing on mobile/tablet devices */
+            box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px transparent;
+        }
+
+        .hvr-border-fade:hover,
+        .hvr-border-fade:focus,
+        .hvr-border-fade:active {
+            /* Hack to improve aliasing on mobile/tablet devices */
+            box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px transparent;
+        }

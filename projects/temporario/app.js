@@ -25,6 +25,21 @@ var main = function () {
         $('#card').toggleClass('flipped');
     })
 
+
+    var container = $('.container-cube'),
+        buttons = $('.options button'),
+        containerClass = 'step1',
+        onButtonClick = function (event) {
+            console.log('event',event);
+            container.removeClass(containerClass);
+            containerClass = event.target.className;
+            container.addClass(containerClass);
+        };
+
+    for (var i = 0, len = buttons.length; i < len; i++) {
+        buttons[i].addEventListener('click', onButtonClick, false);
+    }
+
 }
 
 $(document).ready(main);
