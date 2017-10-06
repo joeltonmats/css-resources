@@ -20,6 +20,11 @@ function verifyDelay() {
 var main = function () {
     defineSpeedCurve();
     verifyDelay();
+
+    $('#flip').click(function () {
+        $('#card').toggleClass('flipped');
+    })
+
 }
 
 $(document).ready(main);

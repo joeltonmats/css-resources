@@ -96,6 +96,132 @@
     .circle:hover {
         border-radius: 50%;
     }
+    /********************************************* DEMOS ******************************************************/
+
+    .container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #CCC;
+        margin: 0 auto 40px;
+        position: relative;
+    }
+
+    .container2 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #CCC;
+        margin: 0 auto 60px;
+        position: relative;
+        perspective: 600px;
+    }
+
+    .container3 {
+        width: 200px;
+        height: 260px;
+        position: relative;
+        perspective: 800px;
+        margin: 10px auto;
+    }
+
+    #card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+    }
+
+    #card figure {
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    #card .front {
+        background: red;
+    }
+
+    #card .back {
+        background: blue;
+        transform: rotateY(180deg);
+    }
+
+    #card.flipped {
+        transform: rotateY(180deg);
+    }
+
+    /* inverse rotation */
+    #card {
+        transform-origin: right center;
+    }
+
+    #card.flipped {
+        transform: translateX(-100%) rotateY(-180deg);
+    }
+
+    .panel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.7;
+        color: white;
+        background: red;
+    }
+
+    .container figure {
+        display: block;
+        width: 55px;
+        height: 55px;
+        float: left;
+        margin: 5px;
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+    }
+
+    #red .box {
+        background-color: red;
+        transform: perspective(600px) rotateY( 45deg);
+    }
+
+    #blue .box {
+        background-color: blue;
+        transform: rotateY(45deg);
+    }
+
+    #green {
+        perspective: 400px;
+    }
+
+    #green figure {
+        background-color: green;
+        transform: rotateY(45deg);
+    }
+
+    #translate-z-negative .panel {
+        transform: translateZ( -200px);
+    }
+
+    #translate-z-positive .panel {
+        transform: translateZ( 200px);
+    }
+
+    #rotate-x .panel {
+        transform: rotateX(45deg);
+    }
+
+    #rotate-y .panel {
+        transform: rotateY(45deg);
+    }
+
+    #rotate-z .panel {
+        transform: rotateZ(45deg);
+    }
     /*  EFFECTS   */
 
     a:hover {
@@ -113,6 +239,7 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         font-family: 'Roboto', sans-serif;
     }
+    /********************************************* BACKGROUND TRANSITIONS ******************************************************/
     /* Grow */
 
     .hvr-grow {
@@ -207,4 +334,50 @@
     .hvr-sweep-to-right:focus:before,
     .hvr-sweep-to-right:active:before {
         transform: scaleX(1);
+    }
+    /********************************************* ICONS TRANSITIONS ******************************************************/
+
+    .hvr-icon-back {
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        padding-left: 2.2em;
+        transition-duration: 0.1s;
+    }
+
+    .hvr-icon-back:before {
+        content: "\f137";
+        position: absolute;
+        left: 1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        transform: translateZ(0);
+        transition-duration: 0.1s;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+    }
+
+    .hvr-icon-back:hover:before,
+    .hvr-icon-back:focus:before,
+    .hvr-icon-back:active:before {
+        transform: translateX(-4px);
+    }
+    /********************************************* BORDER TRANSITIONS ******************************************************/
+
+    .hvr-border-fade {
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        transition-duration: 0.3s;
+        transition-property: box-shadow;
+        /* Hack to improve aliasing on mobile/tablet devices */
+        box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px transparent;
+    }
+
+    .hvr-border-fade:hover,
+    .hvr-border-fade:focus,
+    .hvr-border-fade:active {
+        /* Hack to improve aliasing on mobile/tablet devices */
+        box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px transparent;
     }

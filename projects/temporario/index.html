@@ -4,11 +4,13 @@
 <head>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 </head>
 
 <body>
 
     <h1>Transitions</h1>
+
 
     <h2>Simple transition</h2>
 
@@ -40,35 +42,83 @@
 
 
     <h2>Different Hover Effecs </h2>
+
+    <h3>2D Transitions </h3>
     <div class="galleryExample">
         <a class="hvr-grow">Grow</a>
         <a href="#" class="hvr-shrink">Shrink</a>
         <a href="#" class="hvr-pulse">Pulse</a>
+    </div>
+
+    <h3>Background Transitions </h3>
+    <div class="galleryExample">
         <a href="#" class="hvr-sweep-to-right">Sweep To Right</a>
     </div>
 
-    <hr/>
-    <h2>Examples</h2>
+    <h3>Icons</h3>
     <div class="galleryExample">
-        <div id="example1" class="block fade">
-            Fade In
-        </div>
-        <div id="example2" class="block color">
-            Fade Out
-        </div>
-        <div id="example3" class="block grow">
-            Grow
-        </div>
-        <div id="example4" class="block shrink">
-            Shrink
-        </div>
-        <div id="example5" class="block rotate">
-            Rotate
-        </div>
-        <div id="example6" class="block circle">
-            Square to Circle
-        </div>
+        <a href="#" class="hvr-icon-back">Icon Back</a>
     </div>
+
+    <h3>Border Transitions</h3>
+    <div class="galleryExample">
+        <a href="#" class="hvr-border-fade">Border Fade</a>
+    </div>
+    <hr/>
+
+    <h2>Introduction to css 3D Transforms</h2>
+
+    <h2>Persperctive</h2>
+    <section class="galleryExample">
+        <section id="red" class="container">
+            <div class="box"></div>
+        </section>
+        <section id="blue" class="container">
+            <div class="box"></div>
+        </section>
+        <section id="green" class="container">
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+        </section>
+    </section>
+
+    <h2>3D Transforms</h2>
+    <section class="galleryExample">
+        <section id="translate-z-negative" class="container2">
+            <div class="panel">translateZ( -200px )</div>
+        </section>
+        <section id="translate-z-positive" class="container2">
+            <div class="panel">translateZ( 200px )</div>
+        </section>
+        <section id="rotate-x" class="container2">
+            <div class="panel">rotateX( 45deg )</div>
+        </section>
+        <section id="rotate-y" class="container2">
+            <div class="panel">rotateY( 45deg )</div>
+        </section>
+        <section id="rotate-z" class="container2">
+            <div class="panel">rotateZ( 45deg )</div>
+        </section>
+    </section>
+
+    <h2>CARDS</h2>
+    <section class="galleryExample">
+        <div>
+        <section class="container3">
+            <div id="card">
+                <figure class="front"></figure>
+                <figure class="back"></figure>
+            </div>
+        </section>
+
+        <input type="button" id="flip" name="flip" value="Flip">
+        </div>
+    </section>
+
+
 
     <script src="./assets/javascript/jquery.min.js"></script>
     <script src="app.js"></script>
